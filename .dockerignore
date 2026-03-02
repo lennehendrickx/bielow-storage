@@ -1,0 +1,6 @@
+_site
+.git
+.gitignore
+*.md
+.env
+.DS_Store

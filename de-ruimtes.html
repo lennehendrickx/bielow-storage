@@ -1,0 +1,59 @@
+---
+layout: default
+title: De ruimtes
+description: "Overzicht van de beschikbare cellen met bijhorende maten. Bielow Storage, Leuven."
+---
+
+<article class="page-content page-content--ruimtes">
+  <header class="page-header">
+    <h1>De ruimtes</h1>
+    <p class="lead">Hieronder vindt u foto's van onze opslagruimtes en een plan van de beschikbare cellen met de bijhorende afmetingen.</p>
+  </header>
+
+  <section class="ruimtes-section ruimtes-gallery-section" aria-labelledby="ruimtes-gallery-heading">
+    <h2 id="ruimtes-gallery-heading" class="ruimtes-section-title">Foto's</h2>
+    <div class="gallery">
+      <figure class="gallery-item">
+        <a href="{{ site.baseurl }}/assets/images/ruimte-foto-1.jpg" class="gallery-link" data-lightbox data-caption="Opslagruimte">
+          <img src="{{ site.baseurl }}/assets/images/ruimte-foto-1.jpg" alt="Opslagruimte Bielow Storage" width="400" height="225" loading="lazy">
+        </a>
+        <figcaption>Opslagruimte</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <a href="{{ site.baseurl }}/assets/images/ruimte-foto-2.jpg" class="gallery-link" data-lightbox data-caption="Opslagruimte">
+          <img src="{{ site.baseurl }}/assets/images/ruimte-foto-2.jpg" alt="Opslagruimte Bielow Storage" width="400" height="225" loading="lazy">
+        </a>
+        <figcaption>Opslagruimte</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <a href="{{ site.baseurl }}/assets/images/ruimte-foto-3.jpg" class="gallery-link" data-lightbox data-caption="Opslagruimte">
+          <img src="{{ site.baseurl }}/assets/images/ruimte-foto-3.jpg" alt="Opslagruimte Bielow Storage" width="400" height="225" loading="lazy">
+        </a>
+        <figcaption>Opslagruimte</figcaption>
+      </figure>
+      {% for item in site.data.gallery %}
+      <figure class="gallery-item">
+        <a href="{{ site.baseurl }}/assets/images/{{ item.file }}" class="gallery-link" data-lightbox data-caption="{{ item.caption | escape }}">
+          <img src="{{ site.baseurl }}/assets/images/{{ item.file }}" alt="{{ item.alt }}" width="400" height="300" loading="lazy">
+        </a>
+        {% if item.caption %}<figcaption>{{ item.caption }}</figcaption>{% endif %}
+      </figure>
+      {% endfor %}
+    </div>
+    {% if site.data.gallery == nil or site.data.gallery.size == 0 %}
+    <p class="gallery-placeholder">Voeg meer afbeeldingen toe in <code>_data/gallery.yml</code>.</p>
+    {% endif %}
+  </section>
+
+  <section class="ruimtes-section ruimtes-plan-section" aria-labelledby="ruimtes-plan-heading">
+    <h2 id="ruimtes-plan-heading" class="ruimtes-section-title">Plattegrond en afmetingen</h2>
+    <p class="ruimtes-plan-intro">Overzicht van de cellen met bijhorende maten. Klik op het plan om te vergroten.</p>
+    <div class="floor-plan">
+      <a href="{{ site.baseurl }}/assets/images/plan-ruimtes.jpg" data-lightbox data-caption="Plattegrond beschikbare cellen">
+        <img src="{{ site.baseurl }}/assets/images/plan-ruimtes.jpg" alt="Plan van de beschikbare cellen met maten" width="560" height="820" loading="lazy">
+      </a>
+    </div>
+  </section>
+
+  <p class="contact-hint">Vragen over beschikbaarheid of maten? <a href="{{ site.baseurl }}/contact/">Neem contact met ons op</a>.</p>
+</article>

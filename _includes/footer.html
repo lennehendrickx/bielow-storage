@@ -1,0 +1,18 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <section class="footer-contact" aria-label="Contactgegevens">
+      <h2 class="footer-title">Contacteer ons</h2>
+      <p class="footer-item"><strong>TELEFOON</strong><br>{{ site.phone }}</p>
+      <p class="footer-item"><strong>ADRES</strong><br>{{ site.address }}</p>
+      <p class="footer-item"><strong>EMAIL</strong><br><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    </section>
+    <nav class="footer-nav" aria-label="Footer navigatie">
+      <ul>
+        <li><a href="{{ site.baseurl }}/">Home</a></li>
+        <li><a href="{{ site.baseurl }}/de-ruimtes/">De ruimtes</a></li>
+        <li><a href="{{ site.baseurl }}/contact/">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="footer-copy">{{ site.title }}</p>
+  </div>
+</footer>

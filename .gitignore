@@ -1,0 +1,25 @@
+# Jekyll
+_site/
+.jekyll-cache/
+.sass-cache/
+
+# Bundler
+Gemfile.lock
+.bundle/
+vendor/bundle/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Env
+.env
+.env.local
+*.log

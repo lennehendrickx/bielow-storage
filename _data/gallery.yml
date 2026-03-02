@@ -1,0 +1,10 @@
+# Galerij op de pagina De ruimtes. Bestanden in assets/images/
+- file: opslag.jpg
+  alt: Ruime opslag
+  caption: "Opslagruimte 150–210 m²"
+- file: acclimatisatie.jpg
+  alt: Acclimatisatie
+  caption: "Luchtvochtigheidscontrole"
+- file: poort.jpg
+  alt: Sectionale poort met code
+  caption: "Beveiligingscode"
