@@ -6,9 +6,9 @@ description: "Bie-Low biedt stockage ruimte aan in een voormalige champignonkwek
 
 <section class="hero" aria-label="Welkom">
   <div class="hero-inner">
-    <img src="{{ site.baseurl }}/assets/images/logo.png" alt="Bielow Storage – freelance Crane & UnderwaterWorks" class="hero-logo" width="160" height="160">
-    <p class="hero-badge">Opslagruimte - Leuven</p>
-    <p class="hero-tagline">Flexibele verhuur van ruimte & geacclimatiseerde stockageruimtes</p>
+    <img src="{{ site.baseurl }}/assets/images/logo.png" alt="Bie-low Storage – freelance Crane & UnderwaterWorks" class="hero-logo" width="160" height="160">
+    <p class="hero-badge">Opslagruimte · Leuven</p>
+    <p class="hero-tagline">Flexibele verhuur van ruime & geacclimatiseerde stockageruimte.</p>
     <p class="hero-location">{{ site.address }} — vlak bij de E40</p>
     <div class="hero-actions">
       <a href="{{ site.baseurl }}/contact/" class="btn-hero btn-hero-primary">Contact</a>
@@ -17,16 +17,17 @@ description: "Bie-Low biedt stockage ruimte aan in een voormalige champignonkwek
   </div>
 </section>
 
-<section class="intro">
+<section class="intro home-intro">
   <div class="intro-inner">
-    <h2>Bielow storage</h2>
-    <p>Bie-Low biedt stockage ruimte aan in een voormalige champignonkwekerij. Het unieke aan deze betonnen ruimtes is dat de temperatuur steeds constant is. Tussen 7 en 16 graden. Deze cellen zijn daardoor ideaal voor storage.</p>
-    <p><strong>Gemakkelijk bereikbaar</strong> – Vlak bij Leuven en snelle toegang tot de autosnelweg.</p>
-    <a href="{{ site.baseurl }}/de-ruimtes/" class="btn-link">Bekijk overzicht</a>
+    <h2 class="intro-title">Welkom bij Bie-low Storage</h2>
+    <p class="intro-lead">Bie-Low biedt stockage ruimte aan in een voormalige champignonkwekerij. Het unieke aan deze betonnen ruimtes is dat de temperatuur steeds constant is — tussen 7 en 16 graden — ideaal voor opslag.</p>
+    <p><strong>Gemakkelijk bereikbaar</strong> — Vlak bij Leuven met snelle toegang tot de E40.</p>
+    <a href="{{ site.baseurl }}/de-ruimtes/" class="btn-link">Bekijk overzicht van de ruimtes</a>
   </div>
 </section>
 
-<section class="features">
+<section class="features home-features" aria-labelledby="features-heading">
+  <h2 id="features-heading" class="features-heading">Onze voorzieningen</h2>
   <div class="features-grid">
     <article class="feature-card">
       <div class="feature-image">
@@ -66,9 +67,22 @@ description: "Bie-Low biedt stockage ruimte aan in een voormalige champignonkwek
   </div>
 </section>
 
-<section class="contact-cta">
-  <h2>Contacteer ons</h2>
-  <p><strong>TELEFOON</strong> {{ site.phone }}</p>
-  <p><strong>ADRES</strong> {{ site.address }}</p>
-  <p><strong>EMAIL</strong> <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+<section class="contact-cta home-cta">
+  <h2 class="contact-cta-title">Contacteer ons</h2>
+  <p class="contact-cta-text">Vragen over beschikbaarheid of prijzen? Bel of mail ons.</p>
+  <div class="contact-cta-grid">
+    <div class="contact-cta-item">
+      <span class="contact-cta-label">Telefoon</span>
+      <a href="tel:0471620889" class="contact-cta-value">{{ site.phone }}</a>
+    </div>
+    <div class="contact-cta-item">
+      <span class="contact-cta-label">Adres</span>
+      <span class="contact-cta-value">{{ site.address }}</span>
+    </div>
+    <div class="contact-cta-item">
+      <span class="contact-cta-label">E-mail</span>
+      <a href="mailto:{{ site.email }}" class="contact-cta-value">{{ site.email }}</a>
+    </div>
+  </div>
+  <a href="{{ site.baseurl }}/contact/" class="btn-cta">Stuur een bericht</a>
 </section>

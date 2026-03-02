@@ -1,6 +1,6 @@
-# Bielow Storage – GitHub Pages
+# Bie-low Storage – GitHub Pages
 
-Jekyll-website voor [Bielow Storage](http://www.leuven-storage.be/), gehost op GitHub Pages.
+Jekyll-website voor [Bie-low Storage](http://www.leuven-storage.be/), gehost op GitHub Pages.
 
 ## Lokaal draaien
 

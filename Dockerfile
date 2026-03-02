@@ -1,4 +1,4 @@
-# Bielow Storage – Jekyll build and serve
+# Bie-low Storage – Jekyll build and serve
 FROM ruby:3.1-alpine
 
 RUN apk add --no-cache build-base
