@@ -1,16 +1,16 @@
-# Bie-low Storage - Jekyll config
+# Bie-Low Storage - Jekyll config
 # For GitHub Pages project site: baseurl = "/bielow-storage"
 # For user site or custom domain: baseurl = ""
 baseurl: "/bielow-storage"
 url: "https://lennehendrickx.github.io"
 
-title: Bielow Storage
+title: Bie-Low Storage
 description: "Flexibele verhuur van ruimte & geacclimatiseerde stockageruimtes in Leuven."
 
 # Contact (used in footer and contact page)
 phone: "0471 620 889 (Wen)"
 address: "Ristweg 5, 3012 Wilsele, België"
-email: "info@leuven-storage.be"
+email: "bielowbvba@hotmail.com"
 
 # Contact form: set your Formspree endpoint after signing up at https://formspree.io
 # Example: "https://formspree.io/f/xxxxxxxx"

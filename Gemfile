@@ -1,4 +1,4 @@
-# Bie-low Storage - Jekyll for GitHub Pages
+# Bie-Low Storage - Jekyll for GitHub Pages
 # GitHub Pages uses Jekyll 3.9.x; local can use 4.x if Ruby >= 3.0
 source "https://rubygems.org"
 
