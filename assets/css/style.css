@@ -35,6 +35,23 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 9999;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius);
+}
+.skip-link:focus {
+  left: var(--space-md);
+  top: var(--space-md);
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
 body {
   margin: 0;
   font-family: var(--font-sans);
@@ -903,6 +920,14 @@ a[data-lightbox] { cursor: zoom-in; }
   transition: background 0.2s var(--ease-out), transform 0.15s var(--ease-out);
 }
 .contact-form button:hover { background: #1e293b; transform: scale(1.02); }
+.contact-form-honey {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .form-placeholder {
   padding: var(--space-lg);
   background: #fffbeb;

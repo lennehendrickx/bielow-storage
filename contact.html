@@ -14,10 +14,10 @@ description: "Neem contact op met Bie-Low Storage. Telefoon, adres en contactfor
     <section class="contact-form-section" aria-labelledby="form-heading">
       <div class="contact-form-card">
         <h2 id="form-heading" class="contact-section-title">Stuur een bericht</h2>
-        {% if site.form_endpoint != "" and site.form_endpoint != nil %}
-        <form class="contact-form" action="{{ site.form_endpoint }}" method="POST">
+        <form class="contact-form" action="https://formsubmit.co/{{ site.email }}" method="POST">
           <input type="hidden" name="_next" value="{{ site.url }}{{ site.baseurl }}/bedankt/">
-          <input type="text" name="_gotcha" style="position:absolute;left:-9999px" tabindex="-1" aria-hidden="true">
+          <input type="hidden" name="_subject" value="Bericht via Bie-Low Storage website">
+          <input type="text" name="_honey" class="contact-form-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
           <p>
             <label for="name">Naam *</label>
             <input type="text" id="name" name="name" required>
@@ -34,10 +34,6 @@ description: "Neem contact op met Bie-Low Storage. Telefoon, adres en contactfor
             <button type="submit">Versturen</button>
           </p>
         </form>
-        {% else %}
-        <p class="form-placeholder">Configureer <code>form_endpoint</code> in <code>_config.yml</code> (bijv. Formspree) om het contactformulier te activeren.</p>
-        <p>U kunt ons bereiken via <a href="mailto:{{ site.email }}">{{ site.email }}</a> of {{ site.phone }}.</p>
-        {% endif %}
       </div>
     </section>
 

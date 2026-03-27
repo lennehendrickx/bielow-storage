@@ -12,9 +12,8 @@ phone: "0471 620 889 (Wen)"
 address: "Ristweg 5, 3012 Wilsele, België"
 email: "bielowbvba@hotmail.com"
 
-# Contact form: set your Formspree endpoint after signing up at https://formspree.io
-# Example: "https://formspree.io/f/xxxxxxxx"
-form_endpoint: "https://formspree.io/f/xaqdgbor"
+# Contact form: https://formsubmit.co — action in contact.html gebruikt dit e-mailadres.
+# Eerste inzending: bevestig het adres via de activatiemail van FormSubmit.
 
 # Facebook
 facebook_url: "https://www.facebook.com/bielowstorage"
@@ -22,3 +21,10 @@ facebook_url: "https://www.facebook.com/bielowstorage"
 # Build
 markdown: kramdown
 permalink: pretty
+
+# GitHub Pages: sitemap.xml
+plugins:
+  - jekyll-sitemap
+
+# Standaard Open Graph-afbeelding
+og_image: "/assets/images/logo.png"

@@ -28,7 +28,7 @@ Open <http://localhost:4000/bielow-storage/>. Alleen bouwen (zonder serve):
 
 ## Configuratie
 
-- **`_config.yml`**: Pas `baseurl` aan (`"/bielow-storage"` voor project site, `""` voor user site). Vul `form_endpoint` in met je Formspree-URL om het contactformulier te activeren.
+- **`_config.yml`**: Pas `baseurl` aan (`"/bielow-storage"` voor project site, `""` voor user site). Het contactformulier gebruikt [FormSubmit](https://formsubmit.co) met `email`; bij de eerste inzending moet je het adres bevestigen via de activatiemail.
 - **Afbeeldingen**: Plaats bestanden in `assets/images/`. Voor de galerij op De ruimtes: vul `_data/gallery.yml` in.
 
 ## Pagina's
@@ -40,3 +40,11 @@ Open <http://localhost:4000/bielow-storage/>. Alleen bouwen (zonder serve):
 1. Push naar GitHub.
 2. **Settings → Pages** → Source: branch `main`, map `/ (root)`.
 3. Site staat op `https://<username>.github.io/bielow-storage/`.
+
+## Productie (checklist)
+
+- **`_config.yml`**: Zet `url` en `baseurl` op je echte GitHub Pages-URL (of custom domain). `absolute_url` voor canonical, Open Graph en sitemap hangt hieraan.
+- **FormSubmit**: Bevestig het contact-e-mailadres via de mail van FormSubmit na de eerste testinzending.
+- **SEO**: `sitemap.xml` wordt door `jekyll-sitemap` gegenereerd; `robots.txt` wijst naar de sitemap. Favicon gebruikt `assets/images/logo.png`.
+- **404**: `404.html` wordt door GitHub Pages gebruikt voor onbekende paden.
+- **Lokaal bouwen**: Ruby 3.x aanbevolen (`bundle install` + `bundle exec jekyll build`). GitHub Pages bouwt op hun infrastructuur.
