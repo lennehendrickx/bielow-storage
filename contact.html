@@ -15,7 +15,7 @@ description: "Neem contact op met Bie-Low Storage. Telefoon, adres en contactfor
       <div class="contact-form-card">
         <h2 id="form-heading" class="contact-section-title">Stuur een bericht</h2>
         <form class="contact-form" action="https://formsubmit.co/{{ site.email }}" method="POST">
-          <input type="hidden" name="_next" value="{{ site.url }}{{ site.baseurl }}/bedankt/">
+          <input type="hidden" name="_next" value="{{ '/bedankt/' | absolute_url }}">
           <input type="hidden" name="_subject" value="Bericht via Bie-Low Storage website">
           <input type="text" name="_honey" class="contact-form-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
           <p>

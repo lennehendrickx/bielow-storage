@@ -1,14 +1,14 @@
 <header class="site-header">
   <div class="header-inner">
     <div class="header-brand">
-      <a href="{{ site.baseurl }}/" class="logo">BIE-LOW STORAGE</a>
+      <a href="{{ '/' | relative_url }}" class="logo">BIE-LOW STORAGE</a>
       <p class="tagline">FLEXIBELE VERHUUR VAN RUIMTE & GEACCLIMATISEERDE STOCKAGERUIMTES · Leuven</p>
     </div>
     <nav class="nav" aria-label="Hoofdnavigatie">
       <ul class="nav-list">
-        <li><a href="{{ site.baseurl }}/">Home</a></li>
-        <li><a href="{{ site.baseurl }}/de-ruimtes/">De ruimtes</a></li>
-        <li><a href="{{ site.baseurl }}/contact/" class="nav-contact">Contact</a></li>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/de-ruimtes/' | relative_url }}">De ruimtes</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}" class="nav-contact">Contact</a></li>
       </ul>
       <button type="button" class="nav-toggle" aria-label="Menu openen" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -21,7 +21,7 @@
         </svg>
         <span>Volg ons op Facebook</span>
       </a>
-      <a href="{{ site.baseurl }}/contact/" class="btn-contact">CONTACT</a>
+      <a href="{{ '/contact/' | relative_url }}" class="btn-contact">CONTACT</a>
     </div>
   </div>
 </header>

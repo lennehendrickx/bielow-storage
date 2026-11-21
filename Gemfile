@@ -1,13 +1,16 @@
-# Bie-Low Storage - Jekyll for GitHub Pages
-# GitHub Pages uses Jekyll 3.9.x; local can use 4.x if Ruby >= 3.0
+# Bie-Low Storage – match GitHub Pages locally
+# Versions: https://pages.github.com/versions/
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.9"
+# Pin to current GitHub Pages stack (Jekyll 3.10.x); see pages.github.com/versions
+gem "github-pages", "~> 232", group: :jekyll_plugins
 gem "webrick", "~> 1.8"
 
-group :jekyll_plugins do
-  gem "jekyll-sitemap"
-end
+# Ruby 3.4+/4.x: no longer default gems, still required by Jekyll 3 / deps
+gem "base64"
+gem "bigdecimal"
+gem "csv"
+gem "logger"
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo-data"

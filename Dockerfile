@@ -1,5 +1,6 @@
 # Bie-Low Storage – Jekyll build and serve
-FROM ruby:3.1-alpine
+# Ruby aligned with GitHub Pages (see https://pages.github.com/versions/)
+FROM ruby:3.3-alpine
 
 RUN apk add --no-cache build-base
 
@@ -15,8 +16,7 @@ COPY . .
 # Build the site (output in _site)
 RUN bundle exec jekyll build
 
-# Expose Jekyll default port
 EXPOSE 4000
 
-# Serve the built site at http://localhost:4000/bielow-storage/
+# Serve at http://localhost:4000/
 CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--port", "4000"]

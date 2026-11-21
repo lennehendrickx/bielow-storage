@@ -14,27 +14,27 @@ description: "Overzicht van de beschikbare cellen met bijhorende maten. Bie-Low 
     <h2 id="ruimtes-gallery-heading" class="ruimtes-section-title">Foto's</h2>
     <div class="gallery">
       <figure class="gallery-item">
-        <a href="{{ site.baseurl }}/assets/images/ruimte-foto-1.jpg" class="gallery-link" data-lightbox data-caption="Opslagruimte">
-          <img src="{{ site.baseurl }}/assets/images/ruimte-foto-1.jpg" alt="Opslagruimte Bie-Low Storage" width="400" height="225" loading="lazy">
+        <a href="{{ '/assets/images/ruimte-foto-1.jpg' | relative_url }}" class="gallery-link" data-lightbox data-caption="Opslagruimte">
+          <img src="{{ '/assets/images/ruimte-foto-1.jpg' | relative_url }}" alt="Opslagruimte Bie-Low Storage" width="400" height="225" loading="lazy">
         </a>
         <figcaption>Opslagruimte</figcaption>
       </figure>
       <figure class="gallery-item">
-        <a href="{{ site.baseurl }}/assets/images/ruimte-foto-2.jpg" class="gallery-link" data-lightbox data-caption="Opslagruimte">
-          <img src="{{ site.baseurl }}/assets/images/ruimte-foto-2.jpg" alt="Opslagruimte Bie-Low Storage" width="400" height="225" loading="lazy">
+        <a href="{{ '/assets/images/ruimte-foto-2.jpg' | relative_url }}" class="gallery-link" data-lightbox data-caption="Opslagruimte">
+          <img src="{{ '/assets/images/ruimte-foto-2.jpg' | relative_url }}" alt="Opslagruimte Bie-Low Storage" width="400" height="225" loading="lazy">
         </a>
         <figcaption>Opslagruimte</figcaption>
       </figure>
       <figure class="gallery-item">
-        <a href="{{ site.baseurl }}/assets/images/ruimte-foto-3.jpg" class="gallery-link" data-lightbox data-caption="Opslagruimte">
-          <img src="{{ site.baseurl }}/assets/images/ruimte-foto-3.jpg" alt="Opslagruimte Bie-Low Storage" width="400" height="225" loading="lazy">
+        <a href="{{ '/assets/images/ruimte-foto-3.jpg' | relative_url }}" class="gallery-link" data-lightbox data-caption="Opslagruimte">
+          <img src="{{ '/assets/images/ruimte-foto-3.jpg' | relative_url }}" alt="Opslagruimte Bie-Low Storage" width="400" height="225" loading="lazy">
         </a>
         <figcaption>Opslagruimte</figcaption>
       </figure>
       {% for item in site.data.gallery %}
       <figure class="gallery-item">
-        <a href="{{ site.baseurl }}/assets/images/{{ item.file }}" class="gallery-link" data-lightbox data-caption="{{ item.caption | escape }}">
-          <img src="{{ site.baseurl }}/assets/images/{{ item.file }}" alt="{{ item.alt }}" width="400" height="300" loading="lazy">
+        <a href="{{ item.file | prepend: '/assets/images/' | relative_url }}" class="gallery-link" data-lightbox data-caption="{{ item.caption | escape }}">
+          <img src="{{ item.file | prepend: '/assets/images/' | relative_url }}" alt="{{ item.alt }}" width="400" height="300" loading="lazy">
         </a>
         {% if item.caption %}<figcaption>{{ item.caption }}</figcaption>{% endif %}
       </figure>
@@ -49,11 +49,11 @@ description: "Overzicht van de beschikbare cellen met bijhorende maten. Bie-Low 
     <h2 id="ruimtes-plan-heading" class="ruimtes-section-title">Plattegrond en afmetingen</h2>
     <p class="ruimtes-plan-intro">Overzicht van de cellen met bijhorende maten. Klik op het plan om te vergroten.</p>
     <div class="floor-plan">
-      <a href="{{ site.baseurl }}/assets/images/plan-ruimtes.jpg" class="floor-plan-link" data-lightbox data-caption="Plattegrond beschikbare cellen">
-        <img src="{{ site.baseurl }}/assets/images/plan-ruimtes.jpg" alt="Plan van de beschikbare cellen met maten" width="560" height="820" loading="lazy">
+      <a href="{{ '/assets/images/plan-ruimtes.jpg' | relative_url }}" class="floor-plan-link" data-lightbox data-caption="Plattegrond beschikbare cellen">
+        <img src="{{ '/assets/images/plan-ruimtes.jpg' | relative_url }}" alt="Plan van de beschikbare cellen met maten" width="560" height="820" loading="lazy">
       </a>
     </div>
   </section>
 
-  <p class="contact-hint contact-hint--ruimtes">Vragen over beschikbaarheid of maten? <a href="{{ site.baseurl }}/contact/" class="contact-hint-link">Neem contact met ons op</a>.</p>
+  <p class="contact-hint contact-hint--ruimtes">Vragen over beschikbaarheid of maten? <a href="{{ '/contact/' | relative_url }}" class="contact-hint-link">Neem contact met ons op</a>.</p>
 </article>
